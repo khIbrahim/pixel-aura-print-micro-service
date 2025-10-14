@@ -1,0 +1,92 @@
+# Ce fichier n'est pas utilisé et est généré par une IA, ça me permet juste de garder une trace de la configuration qu'on
+# devrait implémenter dans le futur.
+
+service:
+  name: "Print Service"
+  version: "1.0.0"
+  port: 8080
+  environment: "production"  # development, staging, production
+
+logging:
+  level: "info"  # debug, info, warn, error
+  output: "file"  # console, file, both
+  file_path: "./logs/print-service.log"
+  max_size_mb: 100
+  max_backups: 3
+  max_age_days: 30
+
+# Configuration multi-OS
+os:
+  type: "auto"  # auto, windows, linux, android
+
+  windows:
+    print_command: 'powershell -Command "Get-Content ''%s'' | Out-Printer -Name ''%s''"'
+    temp_dir: "C:\\temp\\print-service"
+
+  linux:
+    print_command: "lp -d %s %s"
+    temp_dir: "/tmp/print-service"
+
+  android:
+    method: "http_proxy"  # http_proxy, bluetooth
+    proxy_url: "http://localhost:9000/android-print"
+
+# Configuration des imprimantes
+printers:
+  kitchen:
+    name: "XP-80C"  # Nom système de l'imprimante
+    type: "thermal"
+    width: 80  # mm
+    encoding: "utf-8"
+    enabled: true
+
+  cashier:
+    name: "XP-80C"
+    type: "thermal"
+    width: 80
+    encoding: "utf-8"
+    enabled: true
+
+  customer:
+    name: "XP-80C"
+    type: "thermal"
+    width: 58
+    encoding: "utf-8"
+    enabled: true
+
+# Configuration des templates
+templates:
+  path: "./templates"
+  engine: "go-template"  # go-template, pongo2
+  reload_on_change: true  # En développement uniquement
+
+# Configuration de la queue
+queue:
+  enabled: true
+  workers: 3
+  buffer_size: 100
+  retry_attempts: 3
+  retry_delay_seconds: 5
+
+# Stockage des tickets
+storage:
+  type: "local"  # local, s3, none
+
+  local:
+    path: "./tickets"
+    retention_days: 30
+    format: "json"  # json, txt
+
+  s3:
+    bucket: "pixel-aura-tickets"
+    region: "eu-west-1"
+    path: "tickets/"
+    retention_days: 90
+
+# Sécurité
+security:
+  api_key_enabled: true
+  api_key: "${PRINT_SERVICE_API_KEY}"  # Variable d'environnement
+  allowed_origins:
+    - "http://localhost"
+    - "http://host.docker.internal"

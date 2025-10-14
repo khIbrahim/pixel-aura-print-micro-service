@@ -14,6 +14,7 @@ type Config struct {
 	Print    PrintConfig    `json:"print"`
 	Laravel  LaravelConfig  `json:"laravel"`
 	Security SecurityConfig `json:"security"`
+	Logger   LoggerConfig   `json:"logger"`
 }
 
 type AppConfig struct {
@@ -52,6 +53,14 @@ type SecurityConfig struct {
 	AllowedIPs     []string `json:"allowed_ips" env:"SECURITY_ALLOWED_IPS"`
 	RateLimit      int      `json:"rate_limit" env:"SECURITY_RATE_LIMIT" default:"100"` // requetes par minute
 	TrustedProxies []string `json:"trusted_proxies" env:"SECURITY_TRUSTED_PROXIES"`
+}
+
+type LoggerConfig struct {
+	Level      string `json:"level" env:"LOGGING_LEVEL" default:"info"`
+	FilePath   string `json:"file_path" env:"LOGGING_FILE_PATH" default:"logs/app.log"`
+	MaxSize    int    `json:"max_size" env:"LOGGING_MAX_SIZE" default:"10"`
+	MaxBackups int    `json:"max_backups" env:"LOGGING_MAX_BACKUPS" default:"5"`
+	MaxAge     int    `json:"max_age" env:"LOGGING_MAX_AGE" default:"30"`
 }
 
 func LoadConfig() (*Config, error) {

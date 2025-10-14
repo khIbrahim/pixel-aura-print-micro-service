@@ -2,10 +2,10 @@ package service
 
 import (
 	"fmt"
-	"log"
 	"os"
 	"os/exec"
 	"print-service/internal/config"
+	"print-service/internal/logger"
 )
 
 type PrintService struct {
@@ -63,7 +63,7 @@ func (service *PrintService) PrintToFileAndSend(content string) error {
 		return fmt.Errorf("erreur exécution commande d'impression : %v, sortie : %s", err, string(output))
 	}
 
-	log.Printf("Commande d'impression exécutée avec succès, sortie : %s", string(output))
+	logger.Log.Infof("commande d'impression exécutée avec succès")
 	return nil
 
 }

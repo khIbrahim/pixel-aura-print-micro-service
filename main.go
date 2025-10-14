@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 	"log"
-	"os"
 	"print-service/internal/config"
+	"print-service/internal/logger"
 	"print-service/internal/router"
 
 	"github.com/gin-gonic/gin"
@@ -16,11 +16,9 @@ func main() {
 		log.Fatalf("Erreur chargement configuration : %v", err)
 	}
 
-	fmt.Printf("Configuration chargée : %+v\n", cfg)
-
-	logFile, _ := os.Create("print-service.log")
-	if logFile != nil {
-		log.SetOutput(logFile)
+	err = logger.Init(cfg)
+	if err != nil {
+		log.Fatalf("Erreur initialisation logger : %v", err)
 	}
 
 	r := gin.Default()
@@ -42,7 +40,7 @@ func main() {
 	port := fmt.Sprintf(":%d", cfg.Server.Port)
 	err = r.Run(port)
 	if err != nil {
-		log.Fatalf("Erreur lors du démarrage du serveur: %v", err)
+		logger.Log.Fatalf("erreur lors du démarrage du serveur: %v", err)
 		return
 	}
 }

@@ -1,2 +1,26 @@
-c'est bien une chose que je sais faire c'est niquer des mères, jambes en l'air à volontaire
-LA VIE EST BEEEEEEEEEEEEEEEEEELLE
+-----------------------------------------
+         TICKET RESTAURANT
+-----------------------------------------
+Établissement : Le Bistrot du Coin
+Adresse        : 12 Rue de la République
+                 75001 Paris
+Tél.           : 01 42 56 78 90
+-----------------------------------------
+Date : 14/10/2025      Heure : 12:47
+Serveur : Julie
+-----------------------------------------
+Qté   Désignation              Prix (€)
+-----------------------------------------
+1     Plat du jour             12.50
+1     Dessert maison            5.00
+1     Café                      2.00
+-----------------------------------------
+           Total HT :          16.67
+           TVA (10%) :          1.83
+-----------------------------------------
+           TOTAL TTC :        18.50 €
+-----------------------------------------
+Mode de paiement : TICKET RESTAURANT
+-----------------------------------------
+      Merci et à bientôt !
+-----------------------------------------

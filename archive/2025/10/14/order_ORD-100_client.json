@@ -1,0 +1,9 @@
+{
+  "id": "99b11c74-7b4a-40ba-aaf6-210910fb5251",
+  "order_id": "ORD-100",
+  "type": "client",
+  "created_at": "2025-10-14T23:28:12.0312437+01:00",
+  "printed_at": "2025-10-14T23:28:12.4605572+01:00",
+  "content": "-----------------------------\n   TICKET RESTAURANT\n-----------------------------\nLe Bistrot du Coin\n12 Rue de la République\n75001 Paris - 01 42 56 78 90\n-----------------------------\n14/10/2025 - 12:47  (Julie)\n-----------------------------\nQté  Désignation       €\n1    Plat du jour     12.50\n1    Dessert maison    5.00\n1    Café              2.00\n-----------------------------\nTotal HT : 16.67\nTVA 10% :  1.83\nTOTAL TTC : 18.50 €\n-----------------------------\nPaiement : TICKET RESTO\n-----------------------------\nMerci et à bientôt !\n-----------------------------\n",
+  "printer_name": "XPRINTER D-200N"
+}

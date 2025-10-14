@@ -33,12 +33,16 @@ type ServerConfig struct {
 }
 
 type PrintConfig struct {
-	Command        string        `json:"command" env:"PRINT_COMMAND" default:"Start-Process -FilePath \"%s\" -Verb Print"`
-	Timeout        time.Duration `json:"timeout" env:"PRINT_TIMEOUT" default:"60s"`
-	AllowedFormats []string      `json:"allowed_formats" env:"PRINT_ALLOWED_FORMATS" default:"txt,pdf,png,jpg"`
-	MaxFileSize    int64         `json:"max_file_size" env:"PRINT_MAX_FILE_SIZE" default:"10485760"` // 10MB
-	TempDir        string        `json:"temp_dir" env:"PRINT_TEMP_DIR" default:"./temp"`
-	QueueSize      int           `json:"queue_size" env:"PRINT_QUEUE_SIZE" default:"100"`
+	Command              string        `json:"command" env:"PRINT_COMMAND" default:"Start-Process -FilePath \"%s\" -Verb Print"`
+	Timeout              time.Duration `json:"timeout" env:"PRINT_TIMEOUT" default:"60s"`
+	AllowedFormats       []string      `json:"allowed_formats" env:"PRINT_ALLOWED_FORMATS" default:"txt,pdf,png,jpg"`
+	MaxFileSize          int64         `json:"max_file_size" env:"PRINT_MAX_FILE_SIZE" default:"10485760"` // 10MB
+	TempDir              string        `json:"temp_dir" env:"PRINT_TEMP_DIR" default:"./temp"`
+	QueueSize            int           `json:"queue_size" env:"PRINT_QUEUE_SIZE" default:"100"`
+	KeepArchive          bool          `json:"keep_archive" env:"PRINT_KEEP_ARCHIVE" default:"false"`
+	ArchiveRetentionDays int           `json:"archive_retention_days" env:"PRINT_ARCHIVE_RETENTION_DAYS" default:"90"`
+	ArchiveDir           string        `json:"archive_dir" env:"PRINT_ARCHIVE_DIR" default:"./archive"`
+	CleanupInterval      int           `json:"cleanup_interval" env:"PRINT_CLEANUP_INTERVAL" default:"60"`
 }
 
 type LaravelConfig struct {

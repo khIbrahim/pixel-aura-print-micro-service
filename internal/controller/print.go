@@ -22,9 +22,7 @@ func HandlePrint(c *gin.Context, cfg *config.Config) {
 		})
 		return
 	}
-
-	fmt.Printf("Requête reçue : %+v\n", req)
-
+	
 	content := req.Content + "\n"
 	printService := service.NewPrintService(cfg)
 	err = printService.PrintToFileAndSend(content)

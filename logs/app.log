@@ -1,2 +1,193 @@
 [36mINFO[0m[2025-10-14T20:10:57+01:00] Configuration & Logger chargée avec succès   
 [33mWARN[0m[2025-10-14T20:10:57+01:00] Ceci est un message de test avec un champ personnalisé  [33mtest[0m=field
+[36mINFO[0m[2025-10-14T20:18:19+01:00] commande d'impression exécutée avec succès, sortie:  
+[36mINFO[0m[2025-10-14T20:19:14+01:00] commande d'impression exécutée avec succès, sortie:  
+[36mINFO[0m[2025-10-14T20:59:34+01:00] Stockage des tickets initialisé avec succès  
+[36mINFO[0m[2025-10-14T20:59:34+01:00] %+v&{0xc0000c44e8 ./temp ./archive true}     
+[36mINFO[0m[2025-10-14T21:00:14+01:00] Stockage des tickets initialisé avec succès  
+[36mINFO[0m[2025-10-14T21:00:14+01:00] Détail de la struct                           [36mstruct[0m="&{cfg:0xc0000c44e8 tempDir:./temp archiveDir:./archive keepArchive:true}"
+[36mINFO[0m[2025-10-14T21:12:01+01:00] 
+Fichier temporaire créé avec succès : temp\ticket_17f37920-983f-444c-b2e4-0c57fc5946a5 
+[36mINFO[0m[2025-10-14T22:07:49+01:00] 
+Fichier temporaire créé avec succès : temp\ticket_944536f5-ba67-4858-b63e-f49ffaf86427 
+[36mINFO[0m[2025-10-14T22:18:14+01:00] Fichier temporaire créé avec succès           [36mpath[0m="temp\\ticket_afb8e2a7-5696-491e-a627-e05e2406e3d1"
+[36mINFO[0m[2025-10-14T22:18:14+01:00] 
+Fichier temporaire créé avec succès : temp\ticket_afb8e2a7-5696-491e-a627-e05e2406e3d1 
+[36mINFO[0m[2025-10-14T22:18:49+01:00] Fichier temporaire créé avec succès           [36mpath[0m="temp\\ticket_1ddfc328-b100-47e9-8636-cb0450098529.txt"
+[36mINFO[0m[2025-10-14T22:18:49+01:00] 
+Fichier temporaire créé avec succès : temp\ticket_1ddfc328-b100-47e9-8636-cb0450098529.txt 
+[36mINFO[0m[2025-10-14T22:18:49+01:00] commande d'impression exécutée avec succès   
+[36mINFO[0m[2025-10-14T22:18:49+01:00] Ticket archivé avec succès                    [36mpath[0m="archive\\2025\\10\\14\\order_ORD-100_client.json"
+[36mINFO[0m[2025-10-14T22:19:27+01:00] Fichier temporaire créé avec succès           [36mpath[0m="temp\\ticket_f4ec2346-0f15-4067-ab0e-5bfb043c6e59.txt"
+[36mINFO[0m[2025-10-14T22:19:27+01:00] 
+Fichier temporaire créé avec succès : temp\ticket_f4ec2346-0f15-4067-ab0e-5bfb043c6e59.txt 
+[36mINFO[0m[2025-10-14T22:19:27+01:00] commande d'impression exécutée avec succès   
+[36mINFO[0m[2025-10-14T22:19:27+01:00] Ticket archivé avec succès                    [36mpath[0m="archive\\2025\\10\\14\\order_ORD-100_client.json"
+[36mINFO[0m[2025-10-14T22:22:05+01:00] Fichier temporaire créé avec succès           [36mpath[0m="temp\\ticket_55e26d21-6d2a-4a54-89ee-9a549f6ec0e9.txt"
+[36mINFO[0m[2025-10-14T22:22:05+01:00] 
+Fichier temporaire créé avec succès : temp\ticket_55e26d21-6d2a-4a54-89ee-9a549f6ec0e9.txt 
+[36mINFO[0m[2025-10-14T22:22:06+01:00] commande d'impression exécutée avec succès   
+[36mINFO[0m[2025-10-14T22:22:06+01:00] Ticket archivé avec succès                    [36mpath[0m="archive\\2025\\10\\14\\order_ORD-100_client.json"
+[36mINFO[0m[2025-10-14T22:37:31+01:00] Fichier temporaire créé avec succès           [36mpath[0m="temp\\ticket_868d707a-4f06-4ed4-b0b9-33b39c731c16.txt"
+[36mINFO[0m[2025-10-14T22:37:31+01:00] 
+Fichier temporaire créé avec succès : temp\ticket_868d707a-4f06-4ed4-b0b9-33b39c731c16.txt 
+[36mINFO[0m[2025-10-14T22:37:32+01:00] commande d'impression exécutée avec succès   
+[36mINFO[0m[2025-10-14T22:37:32+01:00] Ticket archivé avec succès                    [36mpath[0m="archive\\2025\\10\\14\\order_ORD-100_client.json"
+[36mINFO[0m[2025-10-14T22:39:48+01:00] Fichier temporaire créé avec succès           [36mpath[0m="temp\\ticket_974a80ec-13e6-4972-ba8d-a90916fb088b.txt"
+[36mINFO[0m[2025-10-14T22:39:48+01:00] 
+Fichier temporaire créé avec succès : temp\ticket_974a80ec-13e6-4972-ba8d-a90916fb088b.txt 
+[36mINFO[0m[2025-10-14T22:39:48+01:00] commande d'impression exécutée avec succès   
+[36mINFO[0m[2025-10-14T22:39:48+01:00] Ticket archivé avec succès                    [36mpath[0m="archive\\2025\\10\\14\\order_ORD-100_client.json"
+[36mINFO[0m[2025-10-14T22:39:48+01:00] Fichier temporaire supprimé avec succès       [36mpath[0m="temp\\ticket_974a80ec-13e6-4972-ba8d-a90916fb088b.txt"
+[36mINFO[0m[2025-10-14T22:40:00+01:00] Fichier temporaire créé avec succès           [36mpath[0m="temp\\ticket_d558b590-45f2-4bff-8f39-1a039af573c1.txt"
+[36mINFO[0m[2025-10-14T22:40:00+01:00] 
+Fichier temporaire créé avec succès : temp\ticket_d558b590-45f2-4bff-8f39-1a039af573c1.txt 
+[36mINFO[0m[2025-10-14T22:40:00+01:00] commande d'impression exécutée avec succès   
+[36mINFO[0m[2025-10-14T22:40:00+01:00] Ticket archivé avec succès                    [36mpath[0m="archive\\2025\\10\\14\\order_ORD-100_client.json"
+[36mINFO[0m[2025-10-14T22:40:00+01:00] Fichier temporaire supprimé avec succès       [36mpath[0m="temp\\ticket_d558b590-45f2-4bff-8f39-1a039af573c1.txt"
+[36mINFO[0m[2025-10-14T22:40:36+01:00] Fichier temporaire créé avec succès           [36mpath[0m="temp\\ticket_0439e602-4314-41a0-a1c0-b3e1bcededfd.txt"
+[36mINFO[0m[2025-10-14T22:40:36+01:00] 
+Fichier temporaire créé avec succès : temp\ticket_0439e602-4314-41a0-a1c0-b3e1bcededfd.txt 
+[36mINFO[0m[2025-10-14T22:40:37+01:00] commande d'impression exécutée avec succès   
+[36mINFO[0m[2025-10-14T22:40:37+01:00] Ticket archivé avec succès                    [36mpath[0m="archive\\2025\\10\\14\\order_ORD-100_client.json"
+[36mINFO[0m[2025-10-14T22:42:18+01:00] Fichier temporaire créé avec succès           [36mpath[0m="temp\\ticket_c72504ad-9d23-445c-bae4-dbfc7ef390c5.txt"
+[36mINFO[0m[2025-10-14T22:42:18+01:00] 
+Fichier temporaire créé avec succès : temp\ticket_c72504ad-9d23-445c-bae4-dbfc7ef390c5.txt 
+[36mINFO[0m[2025-10-14T22:42:19+01:00] commande d'impression exécutée avec succès   
+[36mINFO[0m[2025-10-14T22:42:19+01:00] Ticket archivé avec succès                    [36mpath[0m="archive\\2025\\10\\14\\order_ORD-100_client.json"
+[36mINFO[0m[2025-10-14T22:48:03+01:00] Fichier temporaire créé avec succès           [36mpath[0m="temp\\ticket_ad987ecc-fb52-4501-a9f2-c53dbfddb4d5.txt"
+[36mINFO[0m[2025-10-14T22:48:03+01:00] 
+Fichier temporaire créé avec succès : temp\ticket_ad987ecc-fb52-4501-a9f2-c53dbfddb4d5.txt 
+[36mINFO[0m[2025-10-14T22:49:40+01:00] Fichier temporaire créé avec succès           [36mpath[0m="temp\\ticket_c334049a-cff1-4fa2-a7d5-b5e233abb8fe.txt"
+[36mINFO[0m[2025-10-14T22:49:40+01:00] 
+Fichier temporaire créé avec succès : temp\ticket_c334049a-cff1-4fa2-a7d5-b5e233abb8fe.txt 
+[36mINFO[0m[2025-10-14T23:19:30+01:00] démarrage task de nettoyage des tickets temporaires jdois mettre apres %d3600 
+[36mINFO[0m[2025-10-14T23:19:30+01:00] Fichier temporaire créé avec succès           [36mpath[0m="temp\\ticket_846cd82e-9c54-46ea-8081-0e42ee56599a.txt"
+[36mINFO[0m[2025-10-14T23:19:30+01:00] task de nettoyage des tickets temporaires arrêtée 
+[36mINFO[0m[2025-10-14T23:19:30+01:00] 
+Fichier temporaire créé avec succès : temp\ticket_846cd82e-9c54-46ea-8081-0e42ee56599a.txt 
+[36mINFO[0m[2025-10-14T23:19:31+01:00] commande d'impression exécutée avec succès   
+[36mINFO[0m[2025-10-14T23:19:31+01:00] Ticket archivé avec succès                    [36mpath[0m="archive\\2025\\10\\14\\order_ORD-100_client.json"
+[36mINFO[0m[2025-10-14T23:19:31+01:00] Fichier temporaire supprimé avec succès       [36mpath[0m="temp\\ticket_846cd82e-9c54-46ea-8081-0e42ee56599a.txt"
+[36mINFO[0m[2025-10-14T23:20:00+01:00] démarrage task de nettoyage des tickets temporaires jdois mettre apres %d3600 
+[36mINFO[0m[2025-10-14T23:20:00+01:00] task de nettoyage des tickets temporaires arrêtée 
+[36mINFO[0m[2025-10-14T23:20:00+01:00] Fichier temporaire créé avec succès           [36mpath[0m="temp\\ticket_20f3a438-0f89-4836-a23d-d42fd836303a.txt"
+[36mINFO[0m[2025-10-14T23:20:00+01:00] 
+Fichier temporaire créé avec succès : temp\ticket_20f3a438-0f89-4836-a23d-d42fd836303a.txt 
+[36mINFO[0m[2025-10-14T23:20:01+01:00] commande d'impression exécutée avec succès   
+[36mINFO[0m[2025-10-14T23:20:01+01:00] Ticket archivé avec succès                    [36mpath[0m="archive\\2025\\10\\14\\order_ORD-100_client.json"
+[36mINFO[0m[2025-10-14T23:21:28+01:00] task de nettoyage des tickets temporaires arrêtée 
+[36mINFO[0m[2025-10-14T23:21:28+01:00] Fichier temporaire créé avec succès           [36mpath[0m="temp\\ticket_ce1a6f42-906e-476c-ae2a-68f4763a9bbc.txt"
+[36mINFO[0m[2025-10-14T23:21:28+01:00] 
+Fichier temporaire créé avec succès : temp\ticket_ce1a6f42-906e-476c-ae2a-68f4763a9bbc.txt 
+[36mINFO[0m[2025-10-14T23:21:29+01:00] commande d'impression exécutée avec succès   
+[36mINFO[0m[2025-10-14T23:21:29+01:00] Ticket archivé avec succès                    [36mpath[0m="archive\\2025\\10\\14\\order_ORD-100_client.json"
+[36mINFO[0m[2025-10-14T23:27:01+01:00] Fichier temporaire créé avec succès           [36mpath[0m="temp\\ticket_16d182a0-f9cf-4dba-8209-181d4ed5da31.txt"
+[36mINFO[0m[2025-10-14T23:27:01+01:00] 
+Fichier temporaire créé avec succès : temp\ticket_16d182a0-f9cf-4dba-8209-181d4ed5da31.txt 
+[36mINFO[0m[2025-10-14T23:27:02+01:00] commande d'impression exécutée avec succès   
+[36mINFO[0m[2025-10-14T23:27:02+01:00] Ticket archivé avec succès                    [36mpath[0m="archive\\2025\\10\\14\\order_ORD-100_client.json"
+[36mINFO[0m[2025-10-14T23:27:50+01:00] Fichier temporaire créé avec succès           [36mpath[0m="temp\\ticket_75365387-7ee9-42e7-a4e2-116809568e3e.txt"
+[36mINFO[0m[2025-10-14T23:27:50+01:00] 
+Fichier temporaire créé avec succès : temp\ticket_75365387-7ee9-42e7-a4e2-116809568e3e.txt 
+[36mINFO[0m[2025-10-14T23:27:51+01:00] commande d'impression exécutée avec succès   
+[36mINFO[0m[2025-10-14T23:27:51+01:00] Ticket archivé avec succès                    [36mpath[0m="archive\\2025\\10\\14\\order_ORD-100_client.json"
+[36mINFO[0m[2025-10-14T23:27:51+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:27:51+01:00] fichier temporaire supprimé : temp\ticket_16d182a0-f9cf-4dba-8209-181d4ed5da31.txt 
+[36mINFO[0m[2025-10-14T23:27:51+01:00] Suppression du fichier temporaire dans 10 secondes : ticket_75365387-7ee9-42e7-a4e2-116809568e3e.txt 
+[36mINFO[0m[2025-10-14T23:27:51+01:00] fichier temporaire supprimé : temp\ticket_ce1a6f42-906e-476c-ae2a-68f4763a9bbc.txt 
+[36mINFO[0m[2025-10-14T23:27:52+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:27:52+01:00] Suppression du fichier temporaire dans 10 secondes : ticket_75365387-7ee9-42e7-a4e2-116809568e3e.txt 
+[36mINFO[0m[2025-10-14T23:27:53+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:27:53+01:00] Suppression du fichier temporaire dans 10 secondes : ticket_75365387-7ee9-42e7-a4e2-116809568e3e.txt 
+[36mINFO[0m[2025-10-14T23:27:54+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:27:54+01:00] Suppression du fichier temporaire dans 10 secondes : ticket_75365387-7ee9-42e7-a4e2-116809568e3e.txt 
+[36mINFO[0m[2025-10-14T23:27:55+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:27:55+01:00] Suppression du fichier temporaire dans 10 secondes : ticket_75365387-7ee9-42e7-a4e2-116809568e3e.txt 
+[36mINFO[0m[2025-10-14T23:27:56+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:27:56+01:00] Suppression du fichier temporaire dans 10 secondes : ticket_75365387-7ee9-42e7-a4e2-116809568e3e.txt 
+[36mINFO[0m[2025-10-14T23:27:57+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:27:57+01:00] Suppression du fichier temporaire dans 10 secondes : ticket_75365387-7ee9-42e7-a4e2-116809568e3e.txt 
+[36mINFO[0m[2025-10-14T23:27:58+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:27:58+01:00] Suppression du fichier temporaire dans 10 secondes : ticket_75365387-7ee9-42e7-a4e2-116809568e3e.txt 
+[36mINFO[0m[2025-10-14T23:27:59+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:27:59+01:00] Suppression du fichier temporaire dans 10 secondes : ticket_75365387-7ee9-42e7-a4e2-116809568e3e.txt 
+[36mINFO[0m[2025-10-14T23:28:00+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:00+01:00] Suppression du fichier temporaire dans 10 secondes : ticket_75365387-7ee9-42e7-a4e2-116809568e3e.txt 
+[36mINFO[0m[2025-10-14T23:28:01+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:01+01:00] fichier temporaire supprimé : temp\ticket_75365387-7ee9-42e7-a4e2-116809568e3e.txt 
+[36mINFO[0m[2025-10-14T23:28:02+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:03+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:04+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:05+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:06+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:07+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:08+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:09+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:10+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:11+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:12+01:00] Fichier temporaire créé avec succès           [36mpath[0m="temp\\ticket_beaf85dd-c044-4839-aaea-379748cce6af.txt"
+[36mINFO[0m[2025-10-14T23:28:12+01:00] 
+Fichier temporaire créé avec succès : temp\ticket_beaf85dd-c044-4839-aaea-379748cce6af.txt 
+[36mINFO[0m[2025-10-14T23:28:12+01:00] commande d'impression exécutée avec succès   
+[36mINFO[0m[2025-10-14T23:28:12+01:00] Ticket archivé avec succès                    [36mpath[0m="archive\\2025\\10\\14\\order_ORD-100_client.json"
+[36mINFO[0m[2025-10-14T23:28:12+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:12+01:00] Suppression du fichier temporaire dans 10 secondes : ticket_beaf85dd-c044-4839-aaea-379748cce6af.txt 
+[36mINFO[0m[2025-10-14T23:28:13+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:13+01:00] Suppression du fichier temporaire dans 10 secondes : ticket_beaf85dd-c044-4839-aaea-379748cce6af.txt 
+[36mINFO[0m[2025-10-14T23:28:13+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:13+01:00] Suppression du fichier temporaire dans 10 secondes : ticket_beaf85dd-c044-4839-aaea-379748cce6af.txt 
+[36mINFO[0m[2025-10-14T23:28:14+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:14+01:00] Suppression du fichier temporaire dans 10 secondes : ticket_beaf85dd-c044-4839-aaea-379748cce6af.txt 
+[36mINFO[0m[2025-10-14T23:28:14+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:14+01:00] Suppression du fichier temporaire dans 10 secondes : ticket_beaf85dd-c044-4839-aaea-379748cce6af.txt 
+[36mINFO[0m[2025-10-14T23:28:15+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:15+01:00] Suppression du fichier temporaire dans 10 secondes : ticket_beaf85dd-c044-4839-aaea-379748cce6af.txt 
+[36mINFO[0m[2025-10-14T23:28:15+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:15+01:00] Suppression du fichier temporaire dans 10 secondes : ticket_beaf85dd-c044-4839-aaea-379748cce6af.txt 
+[36mINFO[0m[2025-10-14T23:28:16+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:16+01:00] Suppression du fichier temporaire dans 10 secondes : ticket_beaf85dd-c044-4839-aaea-379748cce6af.txt 
+[36mINFO[0m[2025-10-14T23:28:16+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:16+01:00] Suppression du fichier temporaire dans 10 secondes : ticket_beaf85dd-c044-4839-aaea-379748cce6af.txt 
+[36mINFO[0m[2025-10-14T23:28:17+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:17+01:00] Suppression du fichier temporaire dans 10 secondes : ticket_beaf85dd-c044-4839-aaea-379748cce6af.txt 
+[36mINFO[0m[2025-10-14T23:28:17+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:17+01:00] Suppression du fichier temporaire dans 10 secondes : ticket_beaf85dd-c044-4839-aaea-379748cce6af.txt 
+[36mINFO[0m[2025-10-14T23:28:18+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:18+01:00] Suppression du fichier temporaire dans 10 secondes : ticket_beaf85dd-c044-4839-aaea-379748cce6af.txt 
+[36mINFO[0m[2025-10-14T23:28:18+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:18+01:00] Suppression du fichier temporaire dans 10 secondes : ticket_beaf85dd-c044-4839-aaea-379748cce6af.txt 
+[36mINFO[0m[2025-10-14T23:28:19+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:19+01:00] Suppression du fichier temporaire dans 10 secondes : ticket_beaf85dd-c044-4839-aaea-379748cce6af.txt 
+[36mINFO[0m[2025-10-14T23:28:19+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:19+01:00] Suppression du fichier temporaire dans 10 secondes : ticket_beaf85dd-c044-4839-aaea-379748cce6af.txt 
+[36mINFO[0m[2025-10-14T23:28:20+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:20+01:00] Suppression du fichier temporaire dans 10 secondes : ticket_beaf85dd-c044-4839-aaea-379748cce6af.txt 
+[36mINFO[0m[2025-10-14T23:28:20+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:20+01:00] Suppression du fichier temporaire dans 10 secondes : ticket_beaf85dd-c044-4839-aaea-379748cce6af.txt 
+[36mINFO[0m[2025-10-14T23:28:21+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:21+01:00] Suppression du fichier temporaire dans 10 secondes : ticket_beaf85dd-c044-4839-aaea-379748cce6af.txt 
+[36mINFO[0m[2025-10-14T23:28:21+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:21+01:00] Suppression du fichier temporaire dans 10 secondes : ticket_beaf85dd-c044-4839-aaea-379748cce6af.txt 
+[36mINFO[0m[2025-10-14T23:28:22+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:22+01:00] fichier temporaire supprimé : temp\ticket_beaf85dd-c044-4839-aaea-379748cce6af.txt 
+[36mINFO[0m[2025-10-14T23:28:22+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:23+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:23+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:24+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:24+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:25+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:25+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:26+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:26+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:27+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:27+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:28+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:28+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:29+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:29+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:30+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:30+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:31+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:31+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:28:32+01:00] nettoyage le s                               

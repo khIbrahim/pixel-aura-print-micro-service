@@ -1,12 +1,15 @@
 package ticketfiles
 
 import (
+	"context"
 	"encoding/json"
 	"fmt"
 	"os"
 	"path/filepath"
 	"print-service/internal/config"
 	"print-service/internal/logger"
+	"print-service/internal/models"
+	"print-service/internal/tasks"
 	"time"
 
 	"github.com/google/uuid"
@@ -77,7 +80,7 @@ func (storage *TicketStorage) CreateTempFile(content string) (string, error) {
 	return filePath, nil
 }
 
-func (storage *TicketStorage) ArchiveTicket(ticket TicketMetadata) error {
+func (storage *TicketStorage) ArchiveTicket(ticket *models.TicketJob) error {
 	if !storage.keepArchive {
 		return nil
 	}
@@ -94,7 +97,7 @@ func (storage *TicketStorage) ArchiveTicket(ticket TicketMetadata) error {
 		return fmt.Errorf("erreur lors de la création du dossier d'archive %s : %v\n", archivePath, err)
 	}
 
-	fileName := fmt.Sprintf("order_%s_%s.json", ticket.OrderID, ticket.Type)
+	fileName := fmt.Sprintf("order_%s_%s.json", ticket.Request.OrderID, ticket.Request.Type)
 	filePath := filepath.Join(archivePath, fileName)
 
 	data, err := json.MarshalIndent(ticket, "", "  ")
@@ -121,4 +124,12 @@ func (storage *TicketStorage) CleanupTempFile(filePath string) error {
 
 	logger.Log.WithField("path", filePath).Info("Fichier temporaire supprimé avec succès")
 	return nil
+}
+
+func (storage *TicketStorage) LunchCleanupTask() {
+	ctx, _ := context.WithCancel(context.Background())
+	//defer cancel()
+
+	cleanupInterval := time.Duration(storage.cfg.CleanupInterval)
+	go tasks.CleanTempTickets(ctx, storage.cfg.TempDir, cleanupInterval*time.Minute)
 }

@@ -35,8 +35,7 @@ type ServerConfig struct {
 type PrintConfig struct {
 	Command              string        `json:"command" env:"PRINT_COMMAND" default:"Start-Process -FilePath \"%s\" -Verb Print"`
 	Timeout              time.Duration `json:"timeout" env:"PRINT_TIMEOUT" default:"60s"`
-	AllowedFormats       []string      `json:"allowed_formats" env:"PRINT_ALLOWED_FORMATS" default:"txt,pdf,png,jpg"`
-	MaxFileSize          int64         `json:"max_file_size" env:"PRINT_MAX_FILE_SIZE" default:"10485760"` // 10MB
+	MaxContentSize       int           `json:"max_content_size" env:"PRINT_MAX_CONTENT_SIZE" default:"1048576"`
 	TempDir              string        `json:"temp_dir" env:"PRINT_TEMP_DIR" default:"./temp"`
 	QueueSize            int           `json:"queue_size" env:"PRINT_QUEUE_SIZE" default:"100"`
 	KeepArchive          bool          `json:"keep_archive" env:"PRINT_KEEP_ARCHIVE" default:"false"`

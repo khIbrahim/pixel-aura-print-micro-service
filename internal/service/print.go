@@ -1,88 +1,90 @@
 package service
 
 import (
-	"context"
 	"fmt"
-	"log"
 	"os/exec"
 	"print-service/internal/config"
 	"print-service/internal/logger"
-	"print-service/internal/tasks"
+	"print-service/internal/models"
 	"print-service/internal/ticketfiles"
-	"time"
+	"sync"
 )
 
 type PrintService struct {
-	cfg *config.Config
+	cfg           *config.Config
+	ticketStorage *ticketfiles.TicketStorage
+	jobs          map[string]*models.TicketJob
+	mu            sync.RWMutex
 }
 
-func NewPrintService(cfg *config.Config) *PrintService {
-	// todo entourer le CleanTempTickets avec une sorte de try catch pour utiliser cancel et éviter que goroutine plante le service
-	ctx, _ := context.WithCancel(context.Background())
-	//defer cancel()
-
-	cleanupInterval := time.Duration(cfg.Print.CleanupInterval)
-	go tasks.CleanTempTickets(ctx, cfg.Print.TempDir, cleanupInterval*time.Minute)
-
-	return &PrintService{cfg: cfg}
-}
-
-func (service *PrintService) PrintToFileAndSend(content string) error {
-	//maxFileSize := service.cfg.Print.MaxFileSize
-	//allowedFormats := service.cfg.Print.AllowedFormats
-	//tempDir := service.cfg.Print.TempDir
-	printCommand := service.cfg.Print.Command
-	//printTimeout := service.cfg.Print.Timeout
-	//queueSize := service.cfg.Print.QueueSize
-
-	ticketStorage, er := ticketfiles.NewTicketStorage(&service.cfg.Print)
+func NewPrintService(cfg *config.Config) (*PrintService, error) {
+	ticketStorage, er := ticketfiles.NewTicketStorage(&cfg.Print)
 	if er != nil {
-		log.Fatalf("erreur lors de l'initialisation du stockage des tickets\n")
+		return nil, fmt.Errorf("erreur lors de l'initialisation du stockage des tickets\n")
 	}
 
-	filePath, err := ticketStorage.CreateTempFile(content)
+	ticketStorage.LunchCleanupTask()
+
+	return &PrintService{
+		cfg:           cfg,
+		ticketStorage: ticketStorage,
+		jobs:          make(map[string]*models.TicketJob),
+	}, nil
+}
+
+func (service *PrintService) PrintTicketJob(job *models.TicketJob) error {
+	service.mu.Lock()
+	service.jobs[job.ID] = job
+	service.mu.Unlock()
+
+	job.UpdateStatus(models.PrintingStatus, nil)
+	filePath, err := service.ticketStorage.CreateTempFile(job.Request.Content)
 	if err != nil {
-		log.Fatalf("erreur lors de la création du fichier temporaire : %v\n", err)
+		job.UpdateStatus(models.FailedStatus, nil)
+		return fmt.Errorf("erreur lors de la création du fichier temporaire : %v\n", err)
 	}
 
-	//ticket data pour tester
-	ticketMetaData := ticketfiles.CreateTicketMetadata("ORD-100", "client", content, "XPRINTER D-200N", time.Now())
+	logger.Log.Infof("Fichier temporaire créé avec succès : %s\n", filePath)
+	job.FilePath = filePath
 
-	logger.Log.Infof("\nFichier temporaire créé avec succès : %s\n", filePath)
+	for i := 0; i < job.Copies; i++ {
+		logger.Log.WithFields(map[string]interface{}{
+			"job_id":  job.ID,
+			"printer": job.PrinterName,
+			"copy":    i,
+			"total":   job.Copies,
+		}).Debug("Impression d'une copie du ticket")
 
-	// TODO : validation
-	//fileInfo, err := file.Stat()
-	//if err != nil {
-	//	_ = file.Close()
-	//	return fmt.Errorf("erreur obtention info fichier : %v", err)
-	//}
-	//
-	//err = file.Close()
-	//if err != nil {
-	//	return fmt.Errorf("erreur fermeture fichier :%v", err)
-	//}
-	//
-	//if fileInfo.Size() > maxFileSize {
-	//	return fmt.Errorf("erreur : taille fichier dépasse la limite autorisée de %d octets", maxFileSize)
-	//}
+		cmd := fmt.Sprintf(service.cfg.Print.Command, filePath)
+		psCmd := exec.Command("powershell", "-Command", cmd)
 
-	cmd := fmt.Sprintf(printCommand, filePath)
-	output, err := exec.Command("powershell", "-Command", cmd).CombinedOutput()
-	if err != nil {
-		return fmt.Errorf("erreur exécution commande d'impression : %v, sortie : %s", err, string(output))
+		if output, err := psCmd.CombinedOutput(); err != nil {
+			logger.Log.WithError(err).WithField("output", string(output)).Error("Erreur lors de l'impression")
+			job.UpdateStatus("failed", err)
+			return fmt.Errorf("erreur d'impression: %w", err)
+		}
 	}
 
-	logger.Log.Infof("commande d'impression exécutée avec succès")
-	ticketMetaData.PrintedAt = time.Now()
-	err = ticketStorage.ArchiveTicket(ticketMetaData)
-	if err != nil {
-		return fmt.Errorf("erreur archivage ticket : %v", err)
+	if err := service.ticketStorage.ArchiveTicket(job); err != nil {
+		logger.Log.WithError(err).Warn("erreur lors de l'archivage du ticket")
 	}
 
-	//err = ticketStorage.CleanupTempFile(filePath)
-	//if err != nil {
-	//	return fmt.Errorf("erreur nettoyage fichier temporaire : %v", err)
-	//}
+	job.UpdateStatus(models.CompletedStatus, nil)
+
+	logger.Log.WithFields(map[string]interface{}{
+		"job_id":   job.ID,
+		"printer":  job.PrinterName,
+		"order_id": job.Request.OrderID,
+		"type":     job.Request.Type,
+		"copies":   job.Copies,
+	}).Info("Job d'impression terminé avec succès")
+
 	return nil
+}
 
+func (service *PrintService) GetJobStatus(jobID string) *models.TicketJob {
+	service.mu.RLock()
+	defer service.mu.RUnlock()
+
+	return service.jobs[jobID]
 }

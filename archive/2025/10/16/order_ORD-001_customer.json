@@ -1,0 +1,21 @@
+{
+  "id": "39c6c9e0-be3d-45cf-89a2-ec54a81f6a9d",
+  "created_at": "2025-10-16T21:44:01.85702+01:00",
+  "updated_at": "2025-10-16T21:44:01.85702+01:00",
+  "status": "printing",
+  "file_path": "temp\\ticket_e9965638-e6c4-474c-b4a2-202507e69600.txt",
+  "printer_name": "XPRINTER D-200N",
+  "copies": 3,
+  "attempt_count": 0,
+  "request": {
+    "content": "-----------------------------\n   TICKET RESTAURANT\n-----------------------------\nLe Bistrot du Coin\n12 Rue de la République\n75001 Paris - 01 42 56 78 90\n-----------------------------\n14/10/2025 - 12:47  (Julie)\n-----------------------------\nQté  Désignation       €\n1    Plat du jour     12.50\n1    Dessert maison    5.00\n1    Café              2.00\n-----------------------------\nTotal HT : 16.67\nTVA 10% :  1.83\nTOTAL TTC : 18.50 €\n-----------------------------\nPaiement : TICKET RESTO\n-----------------------------\nMerci et à bientôt !\n-----------------------------",
+    "type": "customer",
+    "printer_name": "XPRINTER D-200N",
+    "copies": 3,
+    "order_id": "ORD-001",
+    "table_id": "",
+    "server_id": "",
+    "priority": 0,
+    "metadata": null
+  }
+}

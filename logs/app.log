@@ -191,3 +191,28 @@ Fichier temporaire créé avec succès : temp\ticket_beaf85dd-c044-4839-aaea-379
 [36mINFO[0m[2025-10-14T23:28:31+01:00] nettoyage le s                               
 [36mINFO[0m[2025-10-14T23:28:31+01:00] nettoyage le s                               
 [36mINFO[0m[2025-10-14T23:28:32+01:00] nettoyage le s                               
+[36mINFO[0m[2025-10-14T23:31:22+01:00] Fichier temporaire créé avec succès           [36mpath[0m="temp\\ticket_3a158b37-3576-48cf-8858-38c85725eed7.txt"
+[36mINFO[0m[2025-10-14T23:31:22+01:00] 
+Fichier temporaire créé avec succès : temp\ticket_3a158b37-3576-48cf-8858-38c85725eed7.txt 
+[36mINFO[0m[2025-10-14T23:31:22+01:00] commande d'impression exécutée avec succès   
+[36mINFO[0m[2025-10-14T23:31:22+01:00] Ticket archivé avec succès                    [36mpath[0m="archive\\2025\\10\\14\\order_ORD-100_client.json"
+[36mINFO[0m[2025-10-16T20:40:03+01:00] Taille du contenu reçu : 577 octets          
+[31mFATA[0m[2025-10-16T20:41:16+01:00] erreur lors du démarrage du serveur: listen tcp :8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted. 
+[36mINFO[0m[2025-10-16T20:41:28+01:00] Taille du contenu reçu : 577 octets          
+[36mINFO[0m[2025-10-16T20:41:28+01:00] Fichier temporaire créé avec succès           [36mpath[0m="temp\\ticket_e03df672-b7bc-4d52-9807-d7b9b7d5630b.txt"
+[36mINFO[0m[2025-10-16T20:41:28+01:00] 
+Fichier temporaire créé avec succès : temp\ticket_e03df672-b7bc-4d52-9807-d7b9b7d5630b.txt 
+[36mINFO[0m[2025-10-16T20:41:29+01:00] commande d'impression exécutée avec succès   
+[36mINFO[0m[2025-10-16T20:41:29+01:00] Ticket archivé avec succès                    [36mpath[0m="archive\\2025\\10\\16\\order_ORD-100_client.json"
+[36mINFO[0m[2025-10-16T20:56:02+01:00] Taille du contenu reçu : 577 octets          
+[36mINFO[0m[2025-10-16T20:56:02+01:00] Fichier temporaire créé avec succès           [36mpath[0m="temp\\ticket_c418cb8c-e0c8-43ac-b8c4-63eab7d4264b.txt"
+[36mINFO[0m[2025-10-16T20:56:02+01:00] 
+Fichier temporaire créé avec succès : temp\ticket_c418cb8c-e0c8-43ac-b8c4-63eab7d4264b.txt 
+[36mINFO[0m[2025-10-16T20:56:03+01:00] commande d'impression exécutée avec succès   
+[36mINFO[0m[2025-10-16T20:56:03+01:00] Ticket archivé avec succès                    [36mpath[0m="archive\\2025\\10\\16\\order_ORD-100_client.json"
+[36mINFO[0m[2025-10-16T20:59:13+01:00] Taille du contenu reçu : 577 octets          
+[36mINFO[0m[2025-10-16T20:59:13+01:00] Fichier temporaire créé avec succès           [36mpath[0m="temp\\ticket_0909efc5-00a8-47dd-989d-e8a23a2a3938.txt"
+[36mINFO[0m[2025-10-16T20:59:13+01:00] 
+Fichier temporaire créé avec succès : temp\ticket_0909efc5-00a8-47dd-989d-e8a23a2a3938.txt 
+[36mINFO[0m[2025-10-16T20:59:14+01:00] commande d'impression exécutée avec succès   
+[36mINFO[0m[2025-10-16T20:59:14+01:00] Ticket archivé avec succès                    [36mpath[0m="archive\\2025\\10\\16\\order_ORD-100_client.json"
